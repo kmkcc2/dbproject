@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI">
+  <grid id="27dc6" binding="containerPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1920" height="456"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="750be" binding="addKierunkiPanel" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card1"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="5c61b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Nazwa"/>
+            </properties>
+          </component>
+          <component id="198b4" class="javax.swing.JTextField" binding="nazwaKierunkuTf">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="6c9b3" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Rodzaj studiów"/>
+            </properties>
+          </component>
+          <component id="951c6" class="javax.swing.JComboBox" binding="rodzajKierunkuCb">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Inzynier"/>
+                <item value="Licencjat"/>
+              </model>
+            </properties>
+          </component>
+          <component id="839be" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Kolegium"/>
+            </properties>
+          </component>
+          <component id="de4f1" class="javax.swing.JComboBox" binding="kolegiumCb">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Kolegium nauk przyrodniczych"/>
+                <item value="Kolegium nauk medycznych"/>
+                <item value="Kolegium nauk spolecznych"/>
+                <item value="Kolegium nauk humanistycznych"/>
+              </model>
+            </properties>
+          </component>
+          <component id="a73bb" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Kierownik kierunku"/>
+            </properties>
+          </component>
+          <component id="ef03c" class="javax.swing.JButton" binding="addKierunekBtn">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Dodaj kierunek"/>
+            </properties>
+          </component>
+          <scrollpane id="ba8fc">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="5e79a" class="javax.swing.JTable" binding="pracoTable">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="46194" binding="showKierunkiPanel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card2"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="ec4cd">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="2af70" class="javax.swing.JTable" binding="tabelaKierunki">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <component id="54d06" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Szukaj:"/>
+            </properties>
+          </component>
+          <component id="6845a" class="javax.swing.JTextField" binding="szukajKierunekTf">
+            <constraints>
+              <grid row="0" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="25"/>
+                <maximum-size width="250" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="18"/>
+            </properties>
+          </component>
+          <component id="8c4ff" class="javax.swing.JButton" binding="usunKierunekBtn">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Usuń zaznaczone"/>
+            </properties>
+          </component>
+          <component id="2f97" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Filtruj"/>
+            </properties>
+          </component>
+          <component id="6a4b6" class="javax.swing.JComboBox" binding="comboBoxFiltrKierunki">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="brak"/>
+                <item value="Inzynier"/>
+                <item value="Licencjat"/>
+              </model>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="98ba2" binding="showKolegiaPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card3"/>
+        </constraints>
+        <properties>
+          <font size="24"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <scrollpane id="b62d6">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="28"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="86e6" class="javax.swing.JTable" binding="tablaKolegia">
+                <constraints/>
+                <properties>
+                  <font size="14"/>
+                  <intercellSpacing width="1" height="1"/>
+                  <rowHeight value="75"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="c2d97" binding="showPracownicyPanel" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card4"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="517f7">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="2e857" class="javax.swing.JTable" binding="tabelaPracownicy">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <component id="10eb2" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Szukaj:"/>
+            </properties>
+          </component>
+          <component id="9b174" class="javax.swing.JTextField" binding="szukajPracownikaTf">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="25"/>
+                <maximum-size width="250" height="25"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="52e54" class="javax.swing.JButton" binding="usunPracownikaBtn">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Usuń zaznaczone"/>
+            </properties>
+          </component>
+          <component id="e68eb" class="javax.swing.JButton" binding="prac_bez_opie_btn">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Pracownicy bez statusu opiekuna"/>
+            </properties>
+          </component>
+          <hspacer id="fd53d">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+      <grid id="aa0f4" binding="dodajPracownikaPanel" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card5"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f5daa" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Imię"/>
+            </properties>
+          </component>
+          <component id="a6dbb" class="javax.swing.JTextField" binding="dodajPracoTfImie">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="9582b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Nazwisko"/>
+            </properties>
+          </component>
+          <component id="77d60" class="javax.swing.JTextField" binding="dodajPracoTfNazwisko">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="9e0ad" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Stopień naukowy"/>
+            </properties>
+          </component>
+          <component id="b96b9" class="javax.swing.JComboBox" binding="dodajPracoStCb">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="magister"/>
+                <item value="magister inzynier"/>
+                <item value="doktor"/>
+                <item value="doktor habilitowany"/>
+                <item value="profesor"/>
+              </model>
+            </properties>
+          </component>
+          <component id="94601" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Instytut"/>
+            </properties>
+          </component>
+          <component id="9beb8" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Opiekun roku"/>
+            </properties>
+          </component>
+          <component id="d5d7b" class="javax.swing.JRadioButton" binding="dodajPracoNieRadioButton">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="Nie"/>
+            </properties>
+          </component>
+          <component id="e09cb" class="javax.swing.JRadioButton" binding="dodajPracoTakRadioButton">
+            <constraints>
+              <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Tak"/>
+            </properties>
+          </component>
+          <component id="57640" class="javax.swing.JButton" binding="dodajPracownikaBtn">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Dodaj"/>
+            </properties>
+          </component>
+          <component id="e95ac" class="javax.swing.JComboBox" binding="dodajPracoInstytutCb">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="Inzynierii Materialowej"/>
+                <item value="Biologii i Biotechnologii"/>
+                <item value="Nauk o Polityce"/>
+                <item value="Informatyki"/>
+                <item value="Matematyki"/>
+                <item value="Nauk Medycznych"/>
+                <item value="Ekonomii i Finansow"/>
+                <item value="Polonistyki i Dziennikarstwa"/>
+                <item value="Nauk Prawnych"/>
+                <item value="Nauk Socjologicznych"/>
+              </model>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5c167" binding="showPrzedmiotyPanel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card6"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="e4d2f">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="5325f" class="javax.swing.JTable" binding="tabelaPrzedmioty">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <component id="d3b16" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Szukaj:"/>
+            </properties>
+          </component>
+          <component id="4f916" class="javax.swing.JTextField" binding="szukajPrzedmiotTf">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="25"/>
+                <maximum-size width="250" height="25"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="5bb7e" class="javax.swing.JButton" binding="usunPrzedmiotBtn">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Usuń zaznaczone"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="9ce6" binding="dodajPrzedmiotPanel" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card7"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="9bb38" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Nazwa"/>
+            </properties>
+          </component>
+          <component id="8785a" class="javax.swing.JTextField" binding="dodajPrzedmiotyNazwaTf">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="35f1c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Prowadzący"/>
+            </properties>
+          </component>
+          <component id="db188" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Kierunek"/>
+            </properties>
+          </component>
+          <component id="72bb5" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Liczba ECTS"/>
+            </properties>
+          </component>
+          <component id="a92ba" class="javax.swing.JTextField" binding="dodajPrzedmiotEctsTf">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="c76cb" class="javax.swing.JButton" binding="dodajPrzedmiotBtn">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Dodaj przedmiot"/>
+            </properties>
+          </component>
+          <scrollpane id="74539">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="8f98c" class="javax.swing.JTable" binding="dodajPrzedmiotPracownikTable">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="45f88">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="f48c2" class="javax.swing.JTable" binding="dodajPrzedmiotKierunekTable">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="68405" binding="showRocznikiPanel" layout-manager="GridLayoutManager" row-count="2" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card8"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="ee226">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="2a61a" class="javax.swing.JTable" binding="tabelaRoczniki">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <hspacer id="83b6a">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="f81ff" class="javax.swing.JTextField" binding="rokRocznikiTf">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="30"/>
+                <maximum-size width="100" height="30"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="d3385" class="javax.swing.JButton" binding="resetRocznikiBtn">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Reset"/>
+            </properties>
+          </component>
+          <component id="1dedc" class="javax.swing.JButton" binding="showRocznikBtn">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Pokaż rocznik"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="1f98e" binding="showStudenciPanel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card9"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="b7f23">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="fea8e" class="javax.swing.JTable" binding="tabelaStudenci">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <component id="8d29e" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Szukaj:"/>
+            </properties>
+          </component>
+          <component id="efb81" class="javax.swing.JTextField" binding="szukajStudentaTf">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="25"/>
+                <maximum-size width="250" height="25"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="a4dbf" class="javax.swing.JButton" binding="usunStudentaBtn">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Usuń zaznaczone"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="dfdc0" binding="dodajStudentaPanel" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card10"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="dbffb" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Pesel"/>
+            </properties>
+          </component>
+          <component id="da9a3" class="javax.swing.JTextField" binding="dodajStudentaPeselTf">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="de070" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Imię"/>
+            </properties>
+          </component>
+          <component id="9171f" class="javax.swing.JTextField" binding="dodajStudentaImieTf">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e011d" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Nazwisko"/>
+            </properties>
+          </component>
+          <component id="d669a" class="javax.swing.JTextField" binding="dodajStudentaNazwiskoTf">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="3778b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Kierunek"/>
+            </properties>
+          </component>
+          <component id="d3614" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Stypendium"/>
+            </properties>
+          </component>
+          <component id="4e9a3" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Płeć"/>
+            </properties>
+          </component>
+          <component id="b2e85" class="javax.swing.JRadioButton" binding="mezczyznaRadioBtn">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Mężczyzna"/>
+            </properties>
+          </component>
+          <component id="dc8dd" class="javax.swing.JRadioButton" binding="kobietaRadioBtn">
+            <constraints>
+              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Kobieta"/>
+            </properties>
+          </component>
+          <component id="67a36" class="javax.swing.JCheckBox" binding="socjalneCheckBox" default-binding="true">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="socjalne"/>
+            </properties>
+          </component>
+          <component id="847f7" class="javax.swing.JCheckBox" binding="rektoraCheckBox" default-binding="true">
+            <constraints>
+              <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="rektora"/>
+            </properties>
+          </component>
+          <component id="c20f4" class="javax.swing.JButton" binding="dodajStudentaBtn">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Dodaj studenta"/>
+            </properties>
+          </component>
+          <scrollpane id="7247c">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="e9314" class="javax.swing.JTable" binding="dodajStudentaKierunekTable">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="9e83a" binding="panelStart" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card11"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="45f20" binding="panelExport" layout-manager="GridLayoutManager" row-count="11" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card12"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f75a6" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Warunek (Kolumna = warunek)"/>
+            </properties>
+          </component>
+          <component id="d90ef" class="javax.swing.JButton" binding="buttonExport">
+            <constraints>
+              <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Exportuj do CSV"/>
+            </properties>
+          </component>
+          <scrollpane id="16084">
+            <constraints>
+              <grid row="9" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="f1fde" class="javax.swing.JTable" binding="tabelaPodgladCSV">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <component id="64d12" class="javax.swing.JRadioButton" binding="KierunkiRbEx">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <label value="Kierunki"/>
+              <text value="Kierunki"/>
+            </properties>
+          </component>
+          <component id="3fea2" class="javax.swing.JComboBox" binding="comboBoxNazwyKolumn">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+            </properties>
+          </component>
+          <component id="a9dc8" class="javax.swing.JTextField" binding="textFieldWarunekExport">
+            <constraints>
+              <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="777" height="40"/>
+                <maximum-size width="250" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="22"/>
+            </properties>
+          </component>
+          <component id="43134" class="javax.swing.JRadioButton" binding="KolegiaRbEx">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <label value="Kolegia"/>
+              <text value="Kolegia"/>
+            </properties>
+          </component>
+          <component id="a97a4" class="javax.swing.JRadioButton" binding="PracownicyRbEx">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <label value="Pracownicy"/>
+              <text value="Pracownicy"/>
+            </properties>
+          </component>
+          <component id="61a30" class="javax.swing.JRadioButton" binding="PrzedmiotyRbEx">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <label value="Przedmioty"/>
+              <text value="Przedmioty"/>
+            </properties>
+          </component>
+          <component id="f068d" class="javax.swing.JRadioButton" binding="RocznikiRbEx">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <label value="Roczniki"/>
+              <text value="Roczniki"/>
+            </properties>
+          </component>
+          <component id="8cdd1" class="javax.swing.JRadioButton" binding="StudenciRbEx">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <label value="Studenci"/>
+              <text value="Studenci"/>
+            </properties>
+          </component>
+          <component id="90208" class="javax.swing.JButton" binding="btnFiltrExport">
+            <constraints>
+              <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Filtruj"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="f152" binding="panelImport" layout-manager="GridLayoutManager" row-count="11" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <card name="Card13"/>
+        </constraints>
+        <properties>
+          <font/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="32925" class="javax.swing.JRadioButton" binding="radioButtonKierunki">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Kierunki"/>
+            </properties>
+          </component>
+          <hspacer id="a3b95">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="baedf" class="javax.swing.JRadioButton" binding="radioButtonKolegia">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Kolegia"/>
+            </properties>
+          </component>
+          <component id="44835" class="javax.swing.JRadioButton" binding="radioButtonPracownicy">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Pracownicy"/>
+            </properties>
+          </component>
+          <component id="b530a" class="javax.swing.JRadioButton" binding="radioButtonPrzedmioty">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Przedmioty"/>
+            </properties>
+          </component>
+          <component id="467e9" class="javax.swing.JRadioButton" binding="radioButtonRoczniki">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Roczniki"/>
+            </properties>
+          </component>
+          <component id="99770" class="javax.swing.JCheckBox" binding="HEADERCheckBox" default-binding="true">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="HEADER"/>
+            </properties>
+          </component>
+          <component id="68235" class="javax.swing.JComboBox" binding="comboBoxDelimiter">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <model>
+                <item value=";"/>
+                <item value=","/>
+                <item value="."/>
+                <item value="/"/>
+              </model>
+            </properties>
+          </component>
+          <component id="1bc08" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Delimiter"/>
+            </properties>
+          </component>
+          <component id="67163" class="javax.swing.JButton" binding="importButton" default-binding="true">
+            <constraints>
+              <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Import"/>
+            </properties>
+          </component>
+          <component id="12b1d" class="javax.swing.JRadioButton" binding="radioButtonStudenci">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Studenci"/>
+            </properties>
+          </component>
+          <component id="7fb2f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Choose file:"/>
+            </properties>
+          </component>
+          <component id="a9004" class="javax.swing.JButton" binding="buttonFileChooserImport">
+            <constraints>
+              <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="25"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value="Wybierz plik"/>
+            </properties>
+          </component>
+          <vspacer id="f5003">
+            <constraints>
+              <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="4836a" class="javax.swing.JLabel" binding="directoryImportLabel">
+            <constraints>
+              <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="22"/>
+              <text value=""/>
+              <visible value="true"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
